@@ -8,7 +8,7 @@ const { rateLimit } = require("express-rate-limit");
 const authRoute = require("./routes/authRoutes");
 const dbConnetion = require("./config/db");
 const cookieParser = require("cookie-parser");
-require("dotenv").config({ path: ".env" });
+require("dotenv").config({ path: "config.env" });
 // middlewares
 app.use(express.json({ limit: "10kb" }));
 const limiter = rateLimit({
