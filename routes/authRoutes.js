@@ -13,7 +13,7 @@ const {
   resetPassword,
   upload,
 } = require("../services/authServices");
-const { loginValidator } = require("../joi/validator/authValidator");
+const { loginValidator, addUserValidator } = require("../joi/authValidator");
 
 const validator = require("../middleware/commonValidation");
 const { protectRoute, isAllowed } = require("../middleware/authMiddleware");
